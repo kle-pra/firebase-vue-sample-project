@@ -1,4 +1,4 @@
-# turnout
+# Firebase vuesimple sample
 
 ## Project setup
 ```
