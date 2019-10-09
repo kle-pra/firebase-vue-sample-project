@@ -1,6 +1,7 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
+    //  only for development, do not commit you production config on a production app
     apiKey: "AIzaSyBrUibkSL2eIB5W_NeCqHI_xURmY5yA6YY",
     authDomain: "newagent-98013.firebaseapp.com",
     databaseURL: "https://newagent-98013.firebaseio.com",

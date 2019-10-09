@@ -1,4 +1,6 @@
-# Firebase vuesimple sample
+# About
+
+Just a simple Vue app to play around with vue/vuex concepts and firebase authentication and firestore database.
 
 ## Project setup
 ```

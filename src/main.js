@@ -22,18 +22,15 @@ const router = new VueRouter({
         }
       },
       component: Dashboard,
-    },
-    {
+    }, {
       path: '/signin',
       name: 'Signin',
       component: () => import(/* webpackChunkName: "signin" */ './components/Signin.vue'),
-    },
-    {
+    }, {
       path: '/about',
       name: 'About',
       component: () => import(/* webpackChunkName: "about" */ './components/About.vue'),
-    },
-    {
+    }, {
       path: '/signup',
       name: 'Signup',
       component: () => import(/* webpackChunkName: "signup" */ './components/Signup.vue'),
@@ -41,10 +38,8 @@ const router = new VueRouter({
   ],
 });
 
-firebaseApp
-  .auth()
+firebaseApp.auth()
   .onAuthStateChanged(user => {
-    console.log('onAuthStateChanged');
     if (user) {
       store.dispatch('signIn', user);
       router.push('/dashboard');
